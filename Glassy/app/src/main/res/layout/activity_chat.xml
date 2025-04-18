@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context=".Chat">
+
+    <LinearLayout
+        android:id="@+id/chatLinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046">
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/profile_icon2"/>
+
+        <TextView
+            android:id="@+id/receiverUsernameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/hardpixel"
+            android:gravity="center"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messagesRecyclerView"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_350sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <LinearLayout
+        android:id="@+id/chatLinearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95">
+
+        <EditText
+            android:id="@+id/chatMessageEditText"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/text_input2"
+            android:ems="10"
+            android:fontFamily="@font/hardpixel"
+            android:hint="Write a message..."
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp"
+            android:textColor="#d3d7dc"
+            android:textColorHint="#a8aeb3"
+            android:textSize="@dimen/_12sdp"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="420dp"/>
+
+        <Button
+            android:id="@+id/sendMessageButton"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/send_icon"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".Settings">
+
+    <ImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/profile_icon2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64">
+
+        <TextView
+            android:id="@+id/usernameSettingsTextView"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hardpixel"
+            android:text="Username"
+            android:textColor="#d3d7dc"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.178"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.61" />
+
+        <EditText
+            android:id="@+id/usernameSettingsEditText"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/text_input"
+            android:ems="10"
+            android:fontFamily="@font/hardpixel"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="20dp"
+            android:textColor="#d3d7dc"
+            android:textColorHint="#a8aeb3"
+            android:textSize="@dimen/_12sdp"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="420dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729">
+
+        <TextView
+            android:id="@+id/statusSettingsTextView"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hardpixel"
+            android:text="Status"
+            android:textColor="#d3d7dc"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.61" />
+
+        <EditText
+            android:id="@+id/statusSettingsEditText"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/text_input"
+            android:ems="10"
+            android:fontFamily="@font/hardpixel"
+            android:hint="Status"
+            android:inputType="text"
+            android:paddingHorizontal="20dp"
+            android:textColor="#d3d7dc"
+            android:textColorHint="#a8aeb3"
+            android:textSize="@dimen/_12sdp"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="420dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveSettingsButton"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/hardpixel"
+        android:textAllCaps="false"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="#d3d7dc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983" />
+</androidx.constraintlayout.widget.ConstraintLayout>

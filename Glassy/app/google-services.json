@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "298726141165",
+    "firebase_url": "https://aline-glassy-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "aline-glassy",
+    "storage_bucket": "aline-glassy.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298726141165:android:1f79a37ae1b21166afb0e4",
+        "android_client_info": {
+          "package_name": "com.example.glassy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTC9eI7Z1RsGKQ-V5T-mPcktrUydoqdl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
